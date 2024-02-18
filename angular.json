@@ -102,8 +102,28 @@
           "options": {
             "buildTarget": "client:build"
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "client:build:production",
+              "serveTarget": "client:serve:production"
+            },
+            "development": {
+              "buildTarget": "client:build:development",
+              "serveTarget": "client:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "434d9067-8a9c-429e-a274-8f9297be17bc"
   }
 }
