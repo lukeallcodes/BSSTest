@@ -1,0 +1,7 @@
+{
+  "routes": [
+    "/clients",
+    "/clients/new",
+    "/landing"
+  ]
+}

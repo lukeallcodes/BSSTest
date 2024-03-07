@@ -8,7 +8,7 @@ import { NewUser } from './newuser';
   providedIn: 'root'
 })
 export class ClientService {
-  private url = 'http://localhost:5200';
+  private url = '/api';
   private clients$ = new BehaviorSubject<Client[]>([]);
 
   constructor(private httpClient: HttpClient) { }

@@ -7,7 +7,7 @@ import { NewUser } from './newuser'; // Ensure this interface correctly defines 
   providedIn: 'root'
 })
 export class UserService {
-  private apiUrl = 'http://localhost:5200/users'; // Adjust based on your actual API endpoint
+  private apiUrl = '/api/users'; // Adjust based on your actual API endpoint
 
   constructor(private http: HttpClient) { }
 

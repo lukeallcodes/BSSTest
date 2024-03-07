@@ -9,7 +9,7 @@ import { LoginResponse } from './login-response';
 })
 export class AuthService {
 
-  private readonly apiUrl = 'http://localhost:5200'; // URL of your backend
+  private readonly apiUrl = '/api'; // URL of your backend
 
   constructor(private http: HttpClient) { }
 
